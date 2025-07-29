@@ -1,12 +1,40 @@
-# React + Vite
+# 📝 To-Do List Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple To-Do List application built using **React + Vite**. It implements full **CRUD functionality** — allowing users to create, read, update, and delete tasks.
 
-Currently, two official plugins are available:
+## 💡 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Add new tasks
+- ✅ Edit existing tasks
+- ✅ Mark tasks as complete (and move them to a separate list)
+- ✅ Delete tasks
+- ✅ Restore completed tasks to the active list
+- ✅ Task data is **saved in localStorage** to persist across browser sessions
 
-## Expanding the ESLint configuration
+## 🛠️ What I Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is my **first React project**, and through it I learned:
+- How to use **React hooks** like `useState`, `useEffect`, and `useRef`
+- How to manage state and component interaction
+- How to implement **routing** (React Router)
+- How to use **localStorage** for persistent client-side storage
+- The modular structure and file organization of React projects
+
+## 🚀 Technologies Used
+
+- React + Vite
+- HTML, CSS, JavaScript
+- LocalStorage (for persistent state)
+
+## 📸 Screenshots
+
+![To-Do App Screenshot](./README-assets/Screenshot(42).png)
+![To-Do App Screenshot](./README-assets/Screenshot(43).png)
+
+
+## 🔗 Live Demo
+
+[View it live on Vercel](https://your-vercel-link.vercel.app)
+
+---
+
