@@ -34,7 +34,7 @@ This is my **first React project**, and through it I learned:
 
 ## 🔗 Live Demo
 
-[View it live on Vercel](https://your-vercel-link.vercel.app)
+[View it live on Vercel](https://to-do-list-react-vite.vercel.app/)
 
 ---
 
