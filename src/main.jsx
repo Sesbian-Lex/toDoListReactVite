@@ -4,7 +4,7 @@ import './index.css'
 // import App from './App.jsx'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import ToDo from './toDo.jsx'
-import CompletedTask from './comepletedTasks.jsx'
+import CompletedTask from './completedTasks.jsx'
 
 const router = createBrowserRouter([
   {path: '/', element: <ToDo/>},
