@@ -126,3 +126,51 @@ li:hover{
     font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+    body{
+        margin: 0px;
+    }
+
+    .list-box{
+        padding: 45px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+
+    li{
+        font-size: 1.8rem;
+        padding: 12px;
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    .list-text{
+        flex: auto;
+        margin-bottom: 5px;
+    }
+
+    .input-box{
+        flex-direction: column;
+    }
+
+    button{
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 3px;
+        margin-left: 4px;
+    }   
+
+    .add-button{
+        padding: 8px;
+    }
+
+    .page2-button{
+        padding: 8px;
+    }
+}

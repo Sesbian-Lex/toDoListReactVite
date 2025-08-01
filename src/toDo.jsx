@@ -102,16 +102,18 @@ function ToDo(){
                         placeholder="Enter task..." 
                         value={newTask} 
                         onChange={handleInputChange}/>
-                <button className='add-button'
-                        onClick={addTask}>
-                    Add Task
-                </button>
-                <Link to={"/completed"}>
-                    <button className='page2-button'>
-                        {/* Edit onClick later */}
-                        Completed Tasks
+                <div>
+                    <button className='add-button'
+                            onClick={addTask}>
+                        Add Task
                     </button>
-                </Link>
+                    <Link to={"/completed"}>
+                        <button className='page2-button'>
+                            {/* Edit onClick later */}
+                            Completed Tasks
+                        </button>
+                    </Link>
+                </div>
             </div>
 
             <ol>
@@ -132,13 +134,13 @@ function ToDo(){
                                 : 
                                 <span className='list-text' id={'task'+index}>{element}</span>
                         }
-
-                        <button className='check-button' id={'check'+index} onClick={()=>{checkTask(index);delTask(index);}} disabled={isEditing[index]}>✔</button>
-                        <button className='del-button' id={'del'+index} onClick={()=>{delTask(index)}} disabled={isEditing[index]}>✖</button>
-                        <button className='up-button' id={'up'+index} onClick={()=>{upTask(index)}} disabled={isEditing[index]}>↑</button>
-                        <button className='down-button' id={'down'+index} onClick={()=>{downTask(index)}} disabled={isEditing[index]}>↓</button>
-                        <button className='down-button' id={'edit'+index} onClick={()=>{editTask(index)}} disabled={isEditing[index]}>✎</button>
-
+                        <div>
+                            <button className='check-button' id={'check'+index} onClick={()=>{checkTask(index);delTask(index);}} disabled={isEditing[index]}>✔</button>
+                            <button className='del-button' id={'del'+index} onClick={()=>{delTask(index)}} disabled={isEditing[index]}>✖</button>
+                            <button className='up-button' id={'up'+index} onClick={()=>{upTask(index)}} disabled={isEditing[index]}>↑</button>
+                            <button className='down-button' id={'down'+index} onClick={()=>{downTask(index)}} disabled={isEditing[index]}>↓</button>
+                            <button className='down-button' id={'edit'+index} onClick={()=>{editTask(index)}} disabled={isEditing[index]}>✎</button>
+                        </div>
                     </li>
                 )}
             </ol>

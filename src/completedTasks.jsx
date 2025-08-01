@@ -53,9 +53,10 @@ function CompletedTask(){
                     <li key={index}>  
                         <span className='list-text' id={'task'+index}>{element.taskName}</span>
                         <span className='date-text' id={'task'+index}>{formatDate(element.date)}</span>
-                        <button className='del-button' id={'return'+index} onClick={()=>{returnTask(index);delTask(index);}}>↩</button>
-                        <button className='del-button' id={'del2'+index} onClick={()=>{delTask(index)}}>✖</button>
-
+                        <div>
+                            <button className='del-button' id={'return'+index} onClick={()=>{returnTask(index);delTask(index);}}>↩</button>
+                            <button className='del-button' id={'del2'+index} onClick={()=>{delTask(index)}}>✖</button>
+                        </div>
                     </li>
                 )}
             </ol>
